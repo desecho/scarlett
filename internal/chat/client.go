@@ -6,6 +6,8 @@ import (
 	"github.com/openai/openai-go"
 )
 
+const DefaultModel = "gpt-5"
+
 // StreamCompletion streams a chat completion and calls onToken for each delta.
 // Returns the full accumulated response text.
 func StreamCompletion(ctx context.Context, client openai.Client,
@@ -13,7 +15,7 @@ func StreamCompletion(ctx context.Context, client openai.Client,
 	onToken func(string)) (string, error) {
 
 	stream := client.Chat.Completions.NewStreaming(ctx, openai.ChatCompletionNewParams{
-		Model:    "gpt-5",
+		Model:    DefaultModel,
 		Messages: messages,
 	})
 
