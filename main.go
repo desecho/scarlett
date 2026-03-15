@@ -17,6 +17,7 @@ func main() {
 	}
 
 	rootCmd.AddCommand(cmd.ChatCmd())
+	rootCmd.AddCommand(cmd.SayCmd())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Fprintln(os.Stderr, err)
