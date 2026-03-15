@@ -4,10 +4,15 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/joho/godotenv"
 	"github.com/spf13/cobra"
 
 	"github.com/desecho/scarlett/cmd"
 )
+
+func init() {
+	godotenv.Load()
+}
 
 func main() {
 	rootCmd := &cobra.Command{

@@ -1,3 +1,4 @@
 scarlett
 *.mp3
 .DS_Store
+.env
