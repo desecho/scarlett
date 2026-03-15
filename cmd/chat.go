@@ -9,7 +9,7 @@ import (
 	"github.com/openai/openai-go"
 	"github.com/spf13/cobra"
 
-	"github.com/scrap/scarlett/internal/tui"
+	"github.com/desecho/scarlett/internal/tui"
 )
 
 var noTTS bool

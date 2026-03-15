@@ -12,8 +12,8 @@ import (
 	fishaudio "github.com/fishaudio/fish-audio-go"
 	"github.com/openai/openai-go"
 
-	"github.com/scrap/scarlett/internal/chat"
-	"github.com/scrap/scarlett/internal/tts"
+	"github.com/desecho/scarlett/internal/chat"
+	"github.com/desecho/scarlett/internal/tts"
 )
 
 var (

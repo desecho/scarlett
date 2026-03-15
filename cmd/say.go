@@ -10,7 +10,7 @@ import (
 	fishaudio "github.com/fishaudio/fish-audio-go"
 	"github.com/spf13/cobra"
 
-	"github.com/scrap/scarlett/internal/tts"
+	"github.com/desecho/scarlett/internal/tts"
 )
 
 // SayCmd returns the say cobra command.

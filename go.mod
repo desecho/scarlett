@@ -1,4 +1,4 @@
-module github.com/scrap/scarlett
+module github.com/desecho/scarlett
 
 go 1.26.1
 

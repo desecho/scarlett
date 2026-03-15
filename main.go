@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/scrap/scarlett/cmd"
+	"github.com/desecho/scarlett/cmd"
 )
 
 func main() {
