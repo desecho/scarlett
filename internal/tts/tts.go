@@ -16,6 +16,7 @@ func Convert(ctx context.Context, client *fishaudio.Client, text string) ([]byte
 		Text:        text,
 		ReferenceID: voiceModelID,
 		Format:      fishaudio.AudioFormatMP3,
+		Model:       fishaudio.ModelS1,
 	})
 }
 
