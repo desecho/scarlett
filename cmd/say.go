@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"strings"
 	"time"
 
 	fishaudio "github.com/fishaudio/fish-audio-go"
@@ -24,6 +25,10 @@ func SayCmd() *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if os.Getenv("FISH_API_KEY") == "" {
 				return fmt.Errorf("FISH_API_KEY environment variable is required")
+			}
+
+			if strings.TrimSpace(args[0]) == "" {
+				return fmt.Errorf("text cannot be empty")
 			}
 
 			client := fishaudio.NewClient()
